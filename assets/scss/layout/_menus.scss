@@ -1,0 +1,24 @@
+.menu {
+    &__container-icon{
+        display: flex;
+        justify-content: center;
+        border-bottom: 3px solid transparent;
+        padding-bottom: 15px;
+        &:hover{
+            border-radius: 5px;
+            border-bottom: 3px solid $adl;
+        }
+    }
+
+    &__icon {
+        font-size: 85px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .menu {
+        &__icon {
+            font-size: 60px;
+        }
+    }
+}

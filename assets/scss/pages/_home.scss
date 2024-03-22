@@ -1,0 +1,116 @@
+.navbar {
+    background-color: $lightblue;
+}
+
+.navbar img {
+    width: auto;
+    max-height: 75px;
+}
+
+.nav-link {
+    color: $white;
+    font-size: $fs16;
+}
+
+.header {
+
+    display: flex;
+
+    &__container-img {
+        text-align: center;
+    }
+
+    &__container img {
+        // width: 100%;
+        max-width: 350px;
+        height: 100%;
+    }
+
+    &__container-text {
+        text-align: left;
+    }
+
+}
+
+.skills {
+
+    background-color: $white;
+    color: $grey;
+
+    &__container {
+        align-items: center;
+        justify-content: space-between;
+
+        // muestra 2 columnas en vista mobile first
+        @include row-cols(2);
+
+        // muestra 8 columnas desde vista tamaño medio
+        @include media-breakpoint-up(md) {
+            @include row-cols(8);
+        }
+
+    }
+
+    &__container-type {
+        font-size: $fs18;
+    }
+
+    &__container-type i {
+        font-size: $fs24;
+    }
+
+}
+
+.projects {
+
+    background-color: $black;
+
+    &__container {
+
+        // muestra 2 columnas en vista mobile first
+        @include row-cols(2);
+
+        // muestra 8 columnas desde vista tamaño medio
+        @include media-breakpoint-up(md) {
+            @include row-cols(4);
+        }
+
+    }
+
+    &__container-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item--img {
+        height: 50px;
+        width: auto;
+    }
+
+    .item--text {
+        font-size: $fs20;
+        padding: $sp15;
+    }
+}
+
+.contact {
+
+    &__container {
+        display: flex;
+    }
+
+    &__container-form {
+        color: $grey;
+    }
+
+    &__container-list ul {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    &__container-list li {
+        padding: $sp20 0;
+    }
+}

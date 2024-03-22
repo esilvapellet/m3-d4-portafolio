@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: $font-mono;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $grey;
+    color: $white;
+}
+
+h1 {
+    font-size: $fs28;
+    font-weight: $fsbold;
+}
+
+h2 {
+    font-size: $fs24;
+    text-transform: $fsupper;
+}
+
+h3 {
+    font-size: $fs20;
+}
+
+p {
+    font-size: $fs16;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+}
